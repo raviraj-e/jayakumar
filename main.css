@@ -1,0 +1,267 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url("asw.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.top
+{
+    width: 100%;
+    height: 600px;
+}
+.header
+{
+    margin: 30px;
+    height: 50px;
+    width: 97%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(2px);
+    border-radius: 22px;
+}
+.header1
+{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: -7px;
+    color:black;
+}
+.header1 h1
+{
+    text-align: center;
+    font-family: monospace;
+    font-weight:900;
+    font-size: 60px;
+  margin-top: -14px;
+  word-spacing: 10px;
+  font-family:"Alfa Slab One", serif;
+  letter-spacing: 5px;
+}
+.header2
+{
+    width: 50%;
+    height: 50px;
+    justify-content: end;
+    display:flex;
+    overflow: hidden;
+    font-size: 10px;
+}
+.header2 img
+{
+    width: 30px;
+    height: 30px;
+}
+.header2 ul
+{
+    list-style-type: none;
+    display: flex;
+}
+.header2 ul li
+{
+    display:flex;
+    padding: 10px;
+   
+}
+.header2 ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -5px;
+    display: none;
+}
+.header2 ul li input
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -5px;
+    width: 200px;
+    display: none;
+    border-radius: 10px;
+}
+.header li:hover
+{
+    border-radius: 100px;
+    backdrop-filter:blur(60px);
+    background:transparent;
+    background-color: aqua;
+    transition:background-color 1s;
+}
+.header li ::after
+{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: transparent;
+    transition: all 1s;
+}
+.header li:hover :after
+{
+    width: 100%;
+    background-color: rgba(5, 5, 5, 0.333);
+    margin: auto;
+}
+.header li:hover a
+{
+    display: block;
+}
+.header li:hover input
+{
+    display: block;
+}
+/* -----------------------------------------------------------H   E    A    D    E   R   -------------------------------------------------- */
+.content
+{
+    width: 97%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    margin-left:30px ;
+}
+.content1
+{
+    padding-top: 200px;
+    width: 40%;
+    height: 400px;
+    text-align: justify;
+}
+.content1 h3
+{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.content1 h1
+{
+    padding-top: 20px;
+}
+.content1a
+{
+    padding-top: 25px;
+    font-size: 20px;
+}
+/* -------------------------------------------------------- */
+.topgames
+{
+    width: 89%;
+    height:1200px ;
+    margin-left: 30px;
+}
+.topick
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.topgames1
+{
+    display: grid;
+    width: 100%;
+    height: 1200px;
+    grid-template-areas:'topgamelist1 topgamelist2 topgamelist3'
+    'topgamelist4 topgamelist5 topgamelist6'
+    'topgamelist7 topgamelist8 topgamelist9';
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column:1fr 1fr 1fr ;
+    padding: 50px;
+    margin-left: 30px;
+} 
+.topgames h1,h6,h4
+{
+    padding-left: 10px;
+}
+.topgames a
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+.topgames img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    padding-inline-start: 10px;
+}
+.topgames button
+{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+.topgames button:hover
+{
+    background-color: white;
+}
+.topgames a:hover
+{
+    color: black;
+    background-color: aqua;
+    display: block;
+    padding: 20px;
+    border-radius: 22px;
+    overflow: hidden;
+    margin-top: -10px;
+}
+.topgamelist1
+{
+    grid-area:topgamelist1;
+}
+
+
+
+.topgamelist2
+{
+    grid-area:topgamelist2;
+}
+.topgamelist3
+{
+    grid-area:topgamelist3;
+}
+.topgamelist4
+{
+    grid-area:topgamelist4;
+    padding-top: 10px;
+}
+.topgamelist5
+{
+    grid-area:topgamelist5;
+    padding-top: 10px;
+}
+.topgamelist6
+{
+    grid-area:topgamelist6;
+    padding-top: 10px;
+}
+.topgamelist7
+{
+    grid-area:topgamelist7;
+    padding-top: 10px;
+}
+.topgamelist8
+{
+    grid-area:topgamelist8;
+    padding-top: 10px;
+}
+.topgamelist9
+{
+    grid-area:topgamelist9;
+    padding-top: 10px;
+}
+/* ------------------------------------------------ */
